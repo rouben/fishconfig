@@ -1,0 +1,7 @@
+# .config/fish stuff to ignore
+fishd.*
+fish_*history
+generated_completions/*
+
+# /etc/fish stuff to ignore
+completions/*
