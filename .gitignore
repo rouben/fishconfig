@@ -2,6 +2,7 @@
 fishd.*
 fish_*history
 generated_completions/*
+fish_variables
 
 # /etc/fish stuff to ignore
-completions/*
+#completions/*
