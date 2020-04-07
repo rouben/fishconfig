@@ -6,6 +6,8 @@ export SSH_AUTH_SOCK=(gpgconf --list-dirs agent-ssh-socket)
 export DEBFULLNAME="Rouben Tchakhmakhtchian"
 export DEBEMAIL="rouben@rouben.net"
 
+set -gx PATH .cargo/bin .rustup/bin $PATH
+
 # Tackle and Tacklebox related stuff (doesn't really work)
 #set tacklebox_path ~/.tackle
 #set tacklebox_modules virtualfish virtualhooks
