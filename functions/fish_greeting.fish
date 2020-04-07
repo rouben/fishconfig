@@ -1,7 +1,9 @@
 function fish_greeting --description "Customize default fish shell greeting message"
-	if which screenfetch > /dev/null
+	if which neofetch > /dev/null
+		neofetch
+	else if which screenfetch > /dev/null
 		screenfetch
-	end
+	end 
 	if test "$USER" = "root"
 		set_color red
 		echo
