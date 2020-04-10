@@ -1,8 +1,9 @@
-function fish_greeting --description "Customize default fish shell greeting message"
-	if which neofetch > /dev/null
+function fish_greeting --description="Customize default fish shell greeting message"
+	if command -sq neofetch
 		neofetch
-	else if which screenfetch > /dev/null
-		screenfetch
+	else if command -sq screenfetch
+		# Use -E to avoid readlink error
+		screenfetch -E
 	end 
 	if test "$USER" = "root"
 		set_color red
