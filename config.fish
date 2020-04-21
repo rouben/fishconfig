@@ -6,7 +6,7 @@ export SSH_AUTH_SOCK=(gpgconf --list-dirs agent-ssh-socket)
 export DEBFULLNAME="Rouben Tchakhmakhtchian"
 export DEBEMAIL="rouben@rouben.net"
 
-set -gx PATH .cargo/bin
+set -gx PATH .cargo/bin $PATH
 set -gx PATH .rustup/bin $PATH
 set -gx PATH .local/bin $PATH
 set -gx PATH /snap/bin $PATH
