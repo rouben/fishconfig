@@ -7,6 +7,9 @@ export DEBFULLNAME="Rouben Tchakhmakhtchian"
 export DEBEMAIL="rouben@rouben.net"
 
 set -gx PATH .cargo/bin .rustup/bin $PATH
+set -gx PATH .local/bin $PATH
+#eval (/opt/miniconda2/bin/conda shell.fish hook)
+/opt/miniconda2/bin/conda shell.fish hook | source
 
 # Tackle and Tacklebox related stuff (doesn't really work)
 #set tacklebox_path ~/.tackle
