@@ -12,7 +12,7 @@ function fish_greeting --description="Customize default fish shell greeting mess
 		echo
 		set_color normal
 	else
-		if which fortune > /dev/null
+		if command -sq fortune
 			fortune -e -a
 		end
 		set_color green
