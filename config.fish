@@ -11,7 +11,7 @@ set -gx PATH .rustup/bin $PATH
 set -gx PATH .local/bin $PATH
 set -gx PATH /snap/bin $PATH
 #eval (/opt/miniconda2/bin/conda shell.fish hook)
-/opt/miniconda2/bin/conda shell.fish hook | source
+#/opt/miniconda2/bin/conda shell.fish hook | source
 
 # Tackle and Tacklebox related stuff (doesn't really work)
 #set tacklebox_path ~/.tackle
