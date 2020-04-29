@@ -4,6 +4,9 @@ function fish_greeting --description="Customize default fish shell greeting mess
 	else if command -sq screenfetch
 		# Use -E to avoid readlink error
 		screenfetch -E
+	end
+	if functions -q taocl
+		taocl
 	end 
 	if test "$USER" = "root"
 		set_color red
