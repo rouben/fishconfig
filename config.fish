@@ -1,7 +1,8 @@
 # GPG related stuff
 export GPG_TTY=(tty)
 export SSH_AUTH_SOCK=(gpgconf --list-dirs agent-ssh-socket)
-echo UPDATESTARTUPTTY | /usr/bin/gpg-connect-agent
+# This breaks scp/sftp. Will have to find another place for this...
+#echo UPDATESTARTUPTTY | /usr/bin/gpg-connect-agent
 
 # DEB packaging stuff
 export DEBFULLNAME="Rouben Tchakhmakhtchian"
