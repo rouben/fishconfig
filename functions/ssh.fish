@@ -1,14 +1,17 @@
 function ssh --description="SSH alias to nuke GPG SSH key agent"
   echo UPDATESTARTUPTTY | /usr/bin/gpg-connect-agent
-  ssh=(which ssh) $ssh $0
+  set ssh (which ssh)
+  command $ssh $argv
 end
 
 function scp --description="SCP alias to nuke GPG SSH key agent"
   echo UPDATESTARTUPTTY | /usr/bin/gpg-connect-agent
-  scp=(which scp) $scp $0
+  set scp (which scp)
+  command $scp $argv
 end
 
 function sftp --description="SFTP alias to nuke GPG SSH key agent"
   echo UPDATESTARTUPTTY | /usr/bin/gpg-connect-agent
-  sftp=(which sftp) $sftp $0
+  set sftp (which sftp)
+  command $sftp $argv
 end
